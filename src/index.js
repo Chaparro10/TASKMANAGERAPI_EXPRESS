@@ -7,15 +7,13 @@ import userRoutes from "./routes/user.route.js";
 import taskRoutes from './routes/task.route.js'
 
 
-import redis from 'redis';
+import {createClient} from 'redis';
 
-// const client = createClient({
-//   host: '127.0.0.1',
-//   port: 6379,
-// });
+const client = createClient({
+  host: 'QkmDvxmJxDaWkVntlmZhxglRkEikbGkF',
+  port: 6379,
+});
 
-
-const client=redis.createClient();
 client.connect();
 
 client.on("connect", () => console.log("🟢 Conectado a Redis"));
