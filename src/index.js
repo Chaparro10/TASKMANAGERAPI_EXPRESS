@@ -9,13 +9,9 @@ import taskRoutes from './routes/task.route.js'
 
 
 import {createClient} from 'redis';
-import { REDIS_HOST, REDIS_PORT } from "./config.js";
-console.log('REDIS', REDIS_HOST)
- console.log('variables de entorno', process.env)
-
+import { REDIS_URL } from "./config.js";
 const client = createClient({
-  host: REDIS_HOST,
-  port: REDIS_PORT,
+ url:REDIS_URL
 });
 
 

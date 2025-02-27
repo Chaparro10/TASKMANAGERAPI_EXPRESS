@@ -1,4 +1,3 @@
-import "dotenv/config"; //Cargar las variables de entorno
 
 
 export const DB_HOST = process.env.DB_HOST;
@@ -9,5 +8,6 @@ export const DB_NAME = process.env.DB_NAME;
 export const MONGO_URI = process.env.MONGO_URI;
 export const REDIS_HOST=process.env.REDIS_HOST;
 export const REDIS_PORT=process.env.REDIS_PORT;
+export const REDIS_URL=process.env.REDIS_URL;
 
 
