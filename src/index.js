@@ -1,6 +1,7 @@
 import express from "express";
 
 import "dotenv/config"; //Cargar las variables de entorno
+
 import testConnection from "./database/database.js";
 import mongoose from "./database/database.mongo.js";
 import userRoutes from "./routes/user.route.js";
@@ -9,11 +10,15 @@ import taskRoutes from './routes/task.route.js'
 
 import {createClient} from 'redis';
 import { REDIS_HOST, REDIS_PORT } from "./config.js";
+console.log('REDIS', REDIS_HOST)
+ console.log('variables de entorno', process.env)
 
 const client = createClient({
   host: REDIS_HOST,
   port: REDIS_PORT,
 });
+
+
 
 client.connect();
 
