@@ -1,0 +1,10 @@
+npm init --inicializar el proyecto
+
+npm install express --instalar express
+npm install dotenv --instalar dotenv variables de entorno
+npm install mongoose  ---Utilizar Mongo
+npm install drizzle-orm -- instalar orm a usar
+npm install mysql2 -- bd a usar 
+
+
+artillery run test.yml --correr la prueba 
