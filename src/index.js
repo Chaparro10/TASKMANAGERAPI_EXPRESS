@@ -36,6 +36,7 @@ app.use("/api/task", taskRoutes);
 const mainRedis = async () => {
   await client.connect();
 }
+
 app.listen(3010, async () => {
   // await mainRedis();
   console.log("Servidor ejecutando en el puerto 3000");
